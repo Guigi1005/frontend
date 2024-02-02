@@ -41,11 +41,6 @@ const Post = () => {
             R
           </Avatar>
         }
-        action={
-          <IconButton aria-label="settings">
-            <MoreVert />
-          </IconButton>
-        }
         title="John Doe"
         subheader="September 14, 2022"
       />
