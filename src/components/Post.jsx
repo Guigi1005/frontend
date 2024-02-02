@@ -23,7 +23,6 @@ const Post = () => {
     if (!userLiked) {
       setLikesCount(likesCount + 1);
       setUserLiked(true);
-      setUserDisliked(false); // Evita que o usuário tenha like e dislike ao mesmo tempo
     }
   };
 
@@ -31,7 +30,6 @@ const Post = () => {
     if (!userDisliked) {
       setDislikesCount(dislikesCount + 1);
       setUserDisliked(true);
-      setUserLiked(false); // Evita que o usuário tenha like e dislike ao mesmo tempo
     }
   };
 
