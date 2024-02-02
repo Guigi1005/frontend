@@ -1,8 +1,7 @@
-import { Mail, Notifications, Pets } from "@mui/icons-material";
+import {Pets } from "@mui/icons-material";
 import {
   AppBar,
   Avatar,
-  Badge,
   Box,
   InputBase,
   Menu,

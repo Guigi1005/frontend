@@ -3,7 +3,6 @@ import {
     Article,
     Group,
     Home,
-    ModeNight,
     Person,
     Settings,
     Storefront,
@@ -18,13 +17,13 @@ import {
   } from "@mui/material";
   import React from "react";
   
-  const Sidebar = ({mode,setMode}) => {
+  const Sidebar = () => {
     return (
       <Box flex={1} p={2} sx={{ display: { xs: "none", sm: "block" } }}>
         <Box position="fixed">
           <List>
             <ListItem disablePadding>
-              <ListItemButton component="a" href="#home">
+              <ListItemButton component="a" href="SignIn.jsx">
                 <ListItemIcon>
                   <Home />
                 </ListItemIcon>
@@ -32,7 +31,7 @@ import {
               </ListItemButton>
             </ListItem>
             <ListItem disablePadding>
-              <ListItemButton component="a" href="#simple-list">
+              <ListItemButton component="a" href="SingUp.jsx">
                 <ListItemIcon>
                   <Article />
                 </ListItemIcon>
