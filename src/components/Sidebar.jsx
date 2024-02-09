@@ -23,15 +23,15 @@ import {
         <Box position="fixed">
           <List>
             <ListItem disablePadding>
-              <ListItemButton component="a" href="SignIn.jsx">
+              <ListItemButton component="a" href="/Home/">
                 <ListItemIcon>
                   <Home />
                 </ListItemIcon>
-                <ListItemText primary="Dashboard" />
+                <ListItemText primary="Home" />
               </ListItemButton>
             </ListItem>
             <ListItem disablePadding>
-              <ListItemButton component="a" href="SingUp.jsx">
+              <ListItemButton component="a" href="/Perfil">
                 <ListItemIcon>
                   <Article />
                 </ListItemIcon>
