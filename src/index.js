@@ -6,12 +6,14 @@ import Register from "./pages/SignUp";
 import Perfil from "./pages/Perfil";
 import Home from "./pages/home";
 import NoPage from "./pages/NoPage";
+import RecuperarSenha from "./pages/RecuperarSenha"
 
 export default function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Login />} />
+        <Route path="/RecuperarSenha" element={<RecuperarSenha />} />
         <Route path="/Register" element={<Register />} />
         <Route path="/Home/" element={<Home />}>
           <Route index element={<Home />} />
