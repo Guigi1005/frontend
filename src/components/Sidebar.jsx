@@ -24,7 +24,7 @@ import {
         <Box position="fixed">
           <List>
             <ListItem disablePadding>
-              <ListItemButton component={Link} to="/Home/">
+              <ListItemButton component={Link} to="/">
                 <ListItemIcon>
                   <Home />
                 </ListItemIcon>
@@ -32,7 +32,7 @@ import {
               </ListItemButton>
             </ListItem>
             <ListItem disablePadding>
-              <ListItemButton component={Link} to="Perfil">
+              <ListItemButton component={Link} to="/Perfil">
                 <ListItemIcon>
                   <Article />
                 </ListItemIcon>
