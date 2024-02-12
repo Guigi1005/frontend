@@ -79,6 +79,7 @@ const Post = () => {
           {dislikesCount}
         </Typography>
       </CardActions>
+      /*Comentarios*/
     </Card>
   );
 };

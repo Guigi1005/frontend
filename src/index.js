@@ -7,46 +7,44 @@ import Perfil from "./pages/Perfil";
 import Home from "./pages/home";
 import NoPage from "./pages/NoPage";
 import RecuperarSenha from "./pages/RecuperarSenha";
-import { 
+import PrivateRoutes from "./utils/PrivateRoutes";
+import {
   createBrowserRouter,
-  Routes,
-  Route,
   RouterProvider
 } from "react-router-dom";
 
 const router = createBrowserRouter([
   {
-    path:"/",
-    element: <Login/>,
+    path:"/login",
+    element: <Login />
   },
   {
-    path:"/Cadastro",
-    element: <Cadastro/>
+    path:"*",
+    element: <NoPage />
   },
   {
     path:"/RecuperarSenha",
-    element: <RecuperarSenha/>
+    element:<RecuperarSenha />
+  },
+  {
+    path:"/Cadastro",
+    element:<Cadastro />
+  },
+  {
+    element: <PrivateRoutes />,
+    children: [
+      {
+        path:"/",
+        element: <Home />
+      },
+      {
+        path:"Perfil",
+        element:<Perfil />
+      }
+    ]
   }
 ])
 
-/*
-export default function App() {
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Login />} />
-        <Route path="/RecuperarSenha" element={<RecuperarSenha />} />
-        <Route path="/Register" element={<Register />} />
-        <Route path="/Home/" element={<Home />}>
-          <Route index element={<Home />} />
-          <Route path="Perfil" element={<Perfil />} />
-          <Route path="*" element={<NoPage />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
-  );
-}
-*/
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

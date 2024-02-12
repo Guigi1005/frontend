@@ -3,7 +3,9 @@ import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
 import {
   Stack,
+  Divider,
 } from "@mui/material";
+import DadosPerfil from '../components/DadosPerfil';
 
 const Perfil = () => {
   return (
@@ -12,8 +14,7 @@ const Perfil = () => {
       <Navbar/>
       <Stack direction='row' spacing={2}>
         <Sidebar/>
-        <Sidebar/>
-        <Sidebar/>
+        <DadosPerfil/>
       </Stack>
     </box>
 
